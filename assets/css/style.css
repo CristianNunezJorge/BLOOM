@@ -1,9 +1,10 @@
 /* Bloom — Week Project Settimana V
    Reset minimale + tipografia di base. Da qui costruisci il layout. */
 
-
 /* Reset */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,9 +26,198 @@ a {
   text-decoration: none;
 }
 
-
 /* Aggiungi qui le tue regole, mobile-first. */
+
+/*------------------------HEADER---------------------*/
+
 .site-header {
   position: sticky;
   top: 0;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  color: #1f7a4d;
+  font-size: 1.4em;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link a:hover {
+  color: #1f7a4d;
+  border-radius: 2px;
+  background-color: #ebfaf2;
+}
+
+/*------------------------HERO---------------------*/
+
+.hero {
+  background-color: #1f7a4d;
+  color: #fff;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 0.8em;
+}
+
+.btn-hero {
+  background-color: #fff;
+  color: #1f7a4d;
+  font-weight: bold;
+  padding: 13px;
+  border-radius: 18px;
+  border-color: #ffffff3f;
+}
+
+.btn-hero:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.scale-in-top {
+  animation: scale-in-top 0.8s;
+}
+
+@keyframes scale-in-top {
+  0% {
+    transform: scale(0);
+    transform-origin: 50% 0%; /* L'animazione parte dal centro-alto */
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+
+/*-----------------------SERVIZI----------------------*/
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.services h2,
+.icons {
+  color: #1f7a4d;
+}
+
+.services-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.icons {
+  font-size: 1.8em;
+}
+.card-container {
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  margin: 12px;
+  padding: 10px;
+}
+
+.card-container:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/*-----------------------FOOTER----------------------*/
+
+#site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1a1919;
+  height: 25vh;
+}
+
+.footer-container {
+  color: #555555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social i {
+  color: #fff;
+  background-color: #555555;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.social i:hover {
+  background-color: #1f7a4d;
+  transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+  .container-header,
+  .services-container,
+  .footer-container {
+    max-width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .services-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card-container {
+    flex: 0 1 calc(50% - 10px);
+  }
+
+  .card-container:nth-child(3) {
+    flex: 0 1 100%;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .social {
+    order: 2;
+  }
+
+  .copyright {
+    order: 3;
+    text-align: right;
+  }
 }

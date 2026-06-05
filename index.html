@@ -10,65 +10,88 @@
     />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <header id="site-header">
       <!-- Logo + nav -->
-      <i class="fa-solid fa-seedling"> Bloom</i>
-      <ul>
-        <li><a href="javascript:void(0)"></a>Servizi</li>
-        <li><a href="javascript:void(0)"></a>Lavori</li>
-        <li><a href="javascript:void(0)"></a>Team</li>
-        <li><a href="javascript:void(0)"></a>Contatti</li>
-      </ul>
+      <div class="container-header">
+        <span class="logo"><i class="fa-solid fa-seedling"></i> Bloom</span>
+        <ul class="nav-link">
+          <li><a href="javascript:void(0)">Servizi</a></li>
+          <li><a href="javascript:void(0)">Lavori</a></li>
+          <li><a href="javascript:void(0)">Team</a></li>
+          <li><a href="javascript:void(0)">Contatti</a></li>
+        </ul>
+      </div>
     </header>
 
-    <main>
+    <main><!-- Titolo, sottotitolo, bottone CTA -->
       <section class="hero">
-        <!-- Titolo, sottotitolo, bottone CTA -->
-        <h1>Trasformiamo idee in design</h2>
-        <p>Siamo uno studio creativo.Identità visiva, web e motion graphic per chi vuole farsi notare.</p>
+        <div class="scale-in-top">
+          <h1>Trasformiamo idee in design</h1>
+          <p>
+          Siamo uno studio creativo.Identità visiva, web e motion graphic per
+          chi vuole farsi notare.
+          </p>
+          <button class="btn-hero">Inizia un progetto</button>
+        </div>
       </section>
 
       <section class="services">
         <!-- 3 card servizi: icona + titolo + descrizione -->
-        <h2>I nostri servizi</h2>
+        <div class="services-container">
+          <h2>I nostri servizi</h2>
+          <div class="services-box">
+            <div class="card-container">
+              <div class="icons"><i class="fa-solid fa-pen-nib"></i></div>
+              <h3>Identità visiva</h3>
+              <p>
+                Logo, palette, tipografia e linee guida per un brand coerente,
+                riconoscibile e duraturo nel tempo.
+              </p>
+            </div>
 
-        <div>
-          <div><i class="fa-solid fa-pen-nib"></i></div>
-          <h3>Identità visiva</h3>
-          <p>Logo, palette, tipografia e linee guida per un brand coerente, riconoscibile e duraturo nel tempo.</p>
+            <div class="card-container">
+              <span class="icons"><i class="fa-solid fa-laptop-code"></i></span>
+              <h3>Web design</h3>
+              <p>
+                Siti vetrina e landing page responsive, accessibili e
+                perfettamente ottimizzate per dispositivi mobili.
+              </p>
+            </div>
+
+            <div class="card-container">
+              <span class="icons"
+                ><i class="fa-solid fa-clapperboard"></i
+              ></span>
+              <h3>Motion graphic</h3>
+              <p>
+                Animazioni e brevi video capaci di raccontare al meglio il
+                prodotto, i canali social e le campagne pubblicitarie.
+              </p>
+            </div>
+          </div>
         </div>
-
-        <div>
-          <div><i class="fa-solid fa-laptop-code"></i></div>
-          <h3>Web design</h3>
-          <p>Siti vetrina e landing page responsive, accessibili e perfettamente ottimizzate per dispositivi mobili.</p>
-        </div>
-
-        <div>
-          <div><i class="fa-solid fa-clapperboard"></i></div>
-          <h3>Motion graphic</h3>
-          <p>Animazioni e brevi video capaci di raccontare al meglio il prodotto, i canali social e le campagne pubblicitarie.</p>
-        </div>
-
-      </section>  
+      </section>
     </main>
 
     <footer id="site-footer">
       <!-- Logo, social icons, copyright -->
+      <div class="footer-container">
+        <div>
+          <span class="logo"><i class="fa-solid fa-seedling"></i> Bloom</span>
+          <p>Studio di design fondato nel 2026.</p>
+        </div>
+
+        <div class="social">
+          <a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a>
+          <a href="javascript:void(0)"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="javascript:void(0)"><i class="fa-brands fa-behance"></i></a>
+        </div>
+
+        <div class="copyright">@ 2026 Bloom</div>
+      </div>
     </footer>
-    <i class="fa-solid fa-seedling"> Bloom</i>
-    <p>Studio di design fondato nel 2026.</p>
-
-    <div>
-      <a href="javascript:void(0)"></a>
-      <a href="javascript:void(0)"></a>
-      <a href="javascript:void(0)"></a>
-    </div>
-
-    <div>
-      @ 2026 Bloom
-    </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script></body>
   </body>
 </html>
