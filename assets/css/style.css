@@ -34,6 +34,9 @@ a {
   position: sticky;
   top: 0;
   background-color: #fff;
+  transition: background-color 0.8s ease;
+  z-index: 1000;
+  width: 100%;
 }
 
 .container-header {
@@ -55,10 +58,30 @@ a {
   gap: 20px;
 }
 
+.nav-link a {
+transition: color 0.8s ease;  
+}
+
 .nav-link a:hover {
   color: #1f7a4d;
   border-radius: 2px;
   background-color: #ebfaf2;
+  border-radius: 15px;
+}
+
+#site-header.scrolled {
+  background-color: #1a1919;
+}
+
+#site-header.scrolled .nav-link a {
+color: #fff;
+}
+
+#site-header.scrolled .nav-link a:hover {
+  color: #1f7a4d;
+  background-color: #555555;
+  padding: 5px;
+  border-radius: 15px;
 }
 
 /*------------------------HERO---------------------*/
@@ -75,8 +98,12 @@ a {
   padding: 20px;
 }
 
+.hero h1 {
+  font-size: 2em;
+}
+
 .hero p {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .btn-hero {
@@ -121,6 +148,10 @@ a {
   padding: 40px 20px;
 }
 
+.services h2{
+  font-size: 2em;
+}
+
 .services h2,
 .icons {
   color: #1f7a4d;
@@ -156,7 +187,6 @@ a {
   justify-content: center;
   text-align: center;
   background-color: #1a1919;
-  height: 15vh;
 }
 
 .footer-container {
