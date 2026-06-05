@@ -30,15 +30,17 @@ a {
 
 /*------------------------HEADER---------------------*/
 
-.site-header {
+#site-header {
   position: sticky;
   top: 0;
+  background-color: #fff;
 }
 
 .container-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 20px;
 }
 
 .logo {
@@ -70,6 +72,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 20px;
 }
 
 .hero p {
@@ -115,6 +118,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 40px 20px;
 }
 
 .services h2,
@@ -126,6 +130,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 .icons {
   font-size: 1.8em;
@@ -133,7 +138,6 @@ a {
 .card-container {
   border-radius: 12px;
   border: 1px solid #f0f0f0;
-  margin: 12px;
   padding: 10px;
 }
 
@@ -152,7 +156,7 @@ a {
   justify-content: center;
   text-align: center;
   background-color: #1a1919;
-  height: 25vh;
+  height: 15vh;
 }
 
 .footer-container {
@@ -160,7 +164,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
+  width: 100%;
 }
 
 .social i {
@@ -175,6 +180,8 @@ a {
   background-color: #1f7a4d;
   transform: translateY(-1px);
 }
+
+/*-----------------------MEDIA QUERY 768----------------------*/
 
 @media (min-width: 768px) {
   .container-header,
@@ -198,7 +205,7 @@ a {
   }
 
   .card-container {
-    flex: 0 1 calc(50% - 10px);
+    flex: 0 1 48%;
   }
 
   .card-container:nth-child(3) {
@@ -219,5 +226,19 @@ a {
   .copyright {
     order: 3;
     text-align: right;
+  }
+}
+
+/*-----------------------MEDIA QUERY 992----------------------*/
+
+@media (min-width: 992px) {
+  .container-header,
+  .services-container,
+  .footer-container {
+    max-width: 960px;
+  }
+
+  .card-container, .card-container:nth-child(3) {
+    flex: 1;
   }
 }
