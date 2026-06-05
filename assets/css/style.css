@@ -58,10 +58,6 @@ a {
   gap: 20px;
 }
 
-.nav-link a {
-transition: color 0.8s ease;  
-}
-
 .nav-link a:hover {
   color: #1f7a4d;
   border-radius: 2px;
